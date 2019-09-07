@@ -1,4 +1,4 @@
-# Book of Changes version 1.2
+# Book of Changes version 1.3
 
 import time
 from random import randint
@@ -6,7 +6,6 @@ import tkinter
 import tkinter as tk
 from tkinter import ttk
 from tkinter import *
-
 
 book_of_changes = {'1': ["""
     
@@ -5182,7 +5181,7 @@ book_of_changes = {'1': ["""
     
         x Six in the second place means:
     
-        he holds him fast with yellow oxhide.
+        He holds him fast with yellow oxhide.
         No one can tear him loose.
     
     Yellow is the color of the middle. It indicates that which is correct and in line
@@ -10551,13 +10550,14 @@ still be viewed in that way.)
     seized: only then will he do the right thing.
 
 (Now we have reached the heart of the answer. We got a six in the third place. The 6
-being an even number (feminine), is in the 3th position an odd (masculine) position
-that is generally not considered favorable. It seems to be a warning against looking
-for advise from high places too enthusiastically and without contemplation - The
-right moment for approach must be seized: only then will we do the right thing. A
-call for modesty and limitation. It also seems to me that the book tells us to curb
-our enthusiasm a bit, but none the less use it without hesitation. Because hesitation
-also leads to remorse.)
+being an even number (yielding) is in the 3th position an odd (strong) position
+which is generally not considered favorable. It seems to be a caution against looking
+for advise from high places too enthusiastically and without thorough contemplation.
+Something this program with its automation perhaps encourages - i.e. its accessibility
+and easiness to use could perhaps lead to overuse and misuse? The right moment for
+approach must be seized: only then will we do the right thing. A call for modesty and
+limitation. It could be seen as the book telling us to curb our enthusiasm a bit, but
+none the less use it without hesitation. Because hesitation also leads to remorse.)
 
 ============================================================
 
@@ -10750,6 +10750,28 @@ For further information About The Book:
     - How to read it, and more.
 
 See 'About the Book', top right corner of screen."""],
+                   'Search': ["""Search Help Window
+
+The Book of Changes consist of 64 hexagrams or chapters. The search function gives
+you an easy way to read any hexagram of your choosing. 
+
+A hexagram can be understood as a typical situation in the human experience. And as
+many civilizations have noticed throughout time, these typical situations go through
+certain stages. There is a cyclical nature to human life, the past does not repeat itself,
+but certain distinct patterns is repeated. One example could be the seven stages of
+empire: (1) The Age of Pioneers, (2) of Conquest, (3) of Commerce, (4) of Affluence,
+(5) of Intellect, (6) of Decadence and (7) of Decline & Collapse. We also see this in the
+biblical creation story when God made the Earth in 6 days and rested on the seventh.
+The number of stages varies from time to time, but in spiritual or mythological context
+the numerical values of 6 or 7 is very often seen. This is also the case with The Book
+of Changes.
+
+Each of the 64 hexagram consist of: The Judgment and The Image, they can be viewed
+as an overall description of the situation. After The Judgment & Image we find six lines.
+The lines can be seen as the stages the situation goes through, before changing into a
+new situation. When asking a question you can receive anywhere from none to six lines.
+It is the lines and the position of the lines that determines what the initial hexagram
+changes into. (For more information see 'About the Book')."""],
                    'Path': ["""Active Path Help Window:
 
 Setting up the active path is a necessary step before you can continue, but it is
@@ -10781,7 +10803,6 @@ that the first hexagram is 16. Enthusiasm, the second number '3' in the square b
 lets us know that line 3 is included in the answer. And lastly the '62' tells us which
 hexagram it changes into - 62. Preponderance of the Small. The last numbers is the
 date and time, 3. september 2019 06:24."""]}
-
 
 hex_codes = [{'title': 'hexagrams'},
              {'1': '111111'},
@@ -10851,7 +10872,6 @@ hex_codes = [{'title': 'hexagrams'},
 
 
 def general_info():
-
     def foreword():
         foreword_window = tk.Tk()
         foreword_window.title('Foreword')
@@ -10955,6 +10975,25 @@ def manuel_help():
                    command=manuel_help_window.destroy).place(relx=0.86, rely=0.9)
 
 
+def search_help():
+    search_help_window = tkinter.Tk()
+    search_help_window.title('Search Help Window')
+    search_help_window.geometry('650x400+625+300')
+    search_help_window.place_slaves()
+    search_help_window.resizable(width=False, height=False)
+    search_help_frame = tk.Frame(master=search_help_window, width=650, height=400, bg=info_bg_colour)
+    search_help_frame.place(relx=0, rely=0)
+    scroll = tk.Scrollbar(search_help_frame)
+    text = tk.Text(search_help_frame, borderwidth=2, width=65, height=17, font='Georgia 11', wrap=tk.WORD)
+    scroll.place(relx=0.945, rely=0.045, height=315)
+    text.place(relx=0.035, rely=0.05)
+    scroll.config(command=text.yview)
+    text.config(yscrollcommand=scroll.set)
+    text.insert(tk.END, book_of_changes['Search'][0])
+    tkinter.Button(search_help_frame, text='Close Help', font='Georgia 8',
+                   command=search_help_window.destroy).place(relx=0.86, rely=0.9)
+
+
 def path_help():
     path_help_window = tkinter.Tk()
     path_help_window.title('Active Path Help Window')
@@ -11024,7 +11063,6 @@ def manuel_update():
 
 
 def search_update():
-
     hex_name = combo_hex.get()
     search_key_x = ''
 
@@ -11036,7 +11074,6 @@ def search_update():
 
 
 def auto_manuel_choice():
-
     if auto_manuel.get() is 1:
 
         choose_frame.destroy()
@@ -11100,13 +11137,12 @@ def file_error():
                                       "\n\nPlease type in a valid active path"
                                       "\nin the 'Insert new active path' slot"
                                       "\n\nFor help press the bottom help icon.",
-                  bg=warning_colour, font='Georgia 10', justify=LEFT).place(relx=0.125, rely=0.225)
+                  bg=warning_colour, font='Georgia 10', justify=LEFT).place(relx=0.155, rely=0.225)
     tkinter.Button(invalid_frame, text='Close Window', font='Georgia 10',
                    command=invalid_window.destroy).place(relx=0.10, rely=0.8)
 
 
 def search():
-
     search_key = search_update()
 
     search_text = (book_of_changes[search_key][0] + ('=' * 60) +
@@ -11142,7 +11178,6 @@ def search():
 
 
 def ask_auto():
-
     def coin_toss():
         """
         a random coin toss resulting in a 2 or a 3, done
@@ -11358,7 +11393,6 @@ def ask_auto():
 
 
 def ask_manuel():
-
     coin_str_manuel = manuel_update()
 
     def coin_int():
@@ -11562,13 +11596,11 @@ answer_colour = '#9e96eb'
 restart_quit_colour = '#dddddd'
 intro_colour = '#787878'
 
-
 try:
     with open('Inventory/active path.txt', 'r') as file:
         path = file.readline()
 except FileNotFoundError:
     path = ''
-
 
 # Main Window
 window = tk.Tk()
@@ -11578,15 +11610,13 @@ window.resizable(width=False, height=False)
 window_frame = tk.Frame(master=window, width=800, height=600, bg=main_colour)
 window_frame.place(relx=0, rely=0)
 
-
 # General Info Label
 tkinter.Label(master=window_frame, text='About the book', font='Georgia 8',
               bg=main_colour).place(relx=0.835, rely=0.016)
 # General Info Button
-exclamation_logo = PhotoImage(file='Inventory\exclamation12.png')
+exclamation_logo = PhotoImage(file='Inventory/exclamation12.png')
 tkinter.Button(master=window_frame, image=exclamation_logo, border=3, cursor='hand2', font='Georgia 8 bold',
                bg=info_colour, activebackground=info_bg_colour, command=general_info).place(relx=0.955, rely=0.015)
-
 
 # Name Entry Label
 tkinter.Label(master=window_frame, text='Insert your name:', font='Georgia 10',
@@ -11595,7 +11625,6 @@ tkinter.Label(master=window_frame, text='Insert your name:', font='Georgia 10',
 entry_name = StringVar()
 name_entry = tkinter.Entry(master=window_frame, width=30, border=4, font='Georgia 14', textvariable=entry_name)
 name_entry.place(relx=0.1, rely=0.07)
-
 
 # Question Entry Label
 tkinter.Label(master=window_frame, text='Insert your question:', font='Georgia 10',
@@ -11611,7 +11640,6 @@ question_entry.config(yscrollcommand=question_entry_scroll.set)
 question_logo_1 = PhotoImage(file='Inventory/question12_1.png')
 tkinter.Button(master=window_frame, image=question_logo_1, border=3, cursor='hand2', font='Georgia 8 bold',
                bg=info_colour, activebackground=info_bg_colour, command=question_help).place(relx=0.85, rely=0.175)
-
 
 # Choose Method Frame
 tkinter.Label(master=window_frame, text='Choose Method', font='Georgia 10',
@@ -11629,7 +11657,6 @@ auto.grid(row=1, column=0, sticky='w', padx=5, pady=3)
 manuel = tkinter.Radiobutton(choose_frame, text='Manuel', font='Georgia', value=2, bg=auto_colour, cursor='hand2',
                              variable=auto_manuel, activebackground=auto_colour, command=auto_manuel_choice)
 manuel.grid(row=2, column=0, sticky='w', padx=5, pady=3)
-
 
 # Coin Toss Frame
 tkinter.Label(master=window_frame, text='Manuel Coin Toss', font='Georgia 10',
@@ -11683,7 +11710,6 @@ question_logo_2 = PhotoImage(file='Inventory/question12_2.png')
 tkinter.Button(master=window_frame, image=question_logo_2, border=3, cursor='hand2', font='Georgia 8 bold',
                bg=info_colour, activebackground=info_bg_colour, command=manuel_help).place(relx=0.835, rely=0.435)
 
-
 # Search Function Frame
 tkinter.Label(master=window_frame, text='Search Function', font='Georgia 10',
               bg=main_colour).place(relx=0.105, rely=0.575)
@@ -11719,7 +11745,10 @@ hex_combo['values'] = ('1. The Creative', '2. The Receptive', '3. Difficulty at 
                        '58. The Joyous', '59. Dispersion [Dissolution]', '60. Limitation', '61. Inner Truth',
                        '62. Preponderance of the Small', '63. After Completion', '64. Before Completion')
 hex_combo.current(randint(1, 64))
-
+# Search Help Button
+question_logo_3 = PhotoImage(file='Inventory/question12_4.png')
+tkinter.Button(master=window_frame, image=question_logo_3, border=3, cursor='hand2', font='Georgia 8 bold',
+               bg=info_colour, activebackground=info_bg_colour, command=search_help).place(relx=0.835, rely=0.61)
 
 # Path Entry Label
 tkinter.Label(master=window_frame, text='Insert new active path:', font='Georgia 10',
@@ -11733,7 +11762,6 @@ path_save = tkinter.Button(master=window_frame, text='Save', border=3, cursor='h
                            bg=save_colour, activebackground=save_bg_colour,
                            command=input_path).place(relx=0.505, rely=0.78)
 
-
 # Active Path Label
 active_path_frame = tkinter.LabelFrame(master=window_frame, text='Active path', font='Georgia 8', bg=main_colour)
 active_path_frame.place(width=313, relx=0.1, rely=0.83)
@@ -11743,15 +11771,13 @@ if len(path) < 1:
 else:
     tkinter.Label(master=active_path_frame, text=path, font='Georgia 10', bg=main_colour).grid(row=0, column=0)
 # Path Help Button
-question_logo_3 = PhotoImage(file='Inventory/question12_3.png')
-tkinter.Button(master=window_frame, image=question_logo_3, border=3, cursor='hand2', font='Georgia 8 bold',
+question_logo_4 = PhotoImage(file='Inventory/question12_4.png')
+tkinter.Button(master=window_frame, image=question_logo_4, border=3, cursor='hand2', font='Georgia 8 bold',
                bg=info_colour, activebackground=info_bg_colour, command=path_help).place(relx=0.505, rely=0.841)
-
 
 # Logo
 logo = PhotoImage(file='Inventory\ouroboros 200.png')
 tkinter.Label(master=window_frame, image=logo, bg=main_colour).place(relx=0.82, rely=0.77)
-
 
 # Ask Question Button
 execute = tkinter.Button(master=window_frame, text='  Ask  ', height=2, border=3, bg=auto_colour,
@@ -11759,11 +11785,9 @@ execute = tkinter.Button(master=window_frame, text='  Ask  ', height=2, border=3
                          command=ask_auto)
 execute.place(relx=0.735, rely=0.79)
 
-
 # Current Version Label
-tkinter.Label(master=window_frame, text='Version: 1.2', font='Georgia 7',
+tkinter.Label(master=window_frame, text='Version: 1.3', font='Georgia 7',
               bg=main_colour).place(relx=0.02, rely=0.95)
-
 
 # Intro Page
 if len(path) < 1:
@@ -11788,6 +11812,5 @@ if len(path) < 1:
     intro_window.attributes('-topmost', True)
     intro_window.resizable(width=False, height=False)
     intro_window.mainloop()
-
 
 window.mainloop()
