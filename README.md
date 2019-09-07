@@ -10,7 +10,7 @@ These hexagrams guide us towards the solutions of difficult problems and life si
 
  - "Far Eastern culture cannot be understood without a knowledge of the I Ching ... this is certainly the best popular exposition of the book." The Times
  
- -------------------------------------------------------------------------------------------------------------------------------------
+ --------------------------------------------About The Program---------------------------------------------------------------------------
 
 But the book is generally viewed as hard to use and understand. This program aims to make it more accessible and easy to use by making the process of extracting the answer automatic. The program is filled with help and information as you move along.
 
