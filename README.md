@@ -1,6 +1,6 @@
 # Book-of-Changes-or-I-Ching
 
- -------------------------------------------------------About The Book----------------------------------------------------------
+ ----------------------------------------------------------About The Book----------------------------------------------------------
 
 More than 5,000 years old, the I Ching is a book of oracles that contains the whole of human experience. By asking it simple or complex questions, this means of divination helps us to explore the unconscious through the symbolism of hexagrams.
 
