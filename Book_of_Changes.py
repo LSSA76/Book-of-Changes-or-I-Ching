@@ -1,4 +1,4 @@
-# Book of Changes version 1.3
+# Book of Changes version 1.4
 
 import time
 from random import randint
@@ -7,6 +7,10 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import *
 
+
+# Book I: The Text - of the Book of Changes
+# The text is made into a dictionary and each of
+# the 64 hexagrams [keys] has 7 subsections [values]
 book_of_changes = {'1': ["""
     
         1. THE CREATIVE
@@ -598,9 +602,9 @@ book_of_changes = {'1': ["""
     We are in a situation in which it is our duty to act, but we lack sufficient
     power. However, an opportunity to make connections offers itself. It must be
     seized. Neither false pride nor false reserve should deter us. Bringing oneself
-    to take the first step, even when it involves a certain degree of self-
-    abnegation, is a sign of inner clarity. To accept help in a difficult situation is
-    not a disgrace. If the right helper is found, all goes well.
+    to take the first step, even when it involves a certain degree of self- abnegation,
+    is a sign of inner clarity. To accept help in a difficult situation is not a disgrace.
+    If the right helper is found, all goes well.
     
     """,
                          """
@@ -1938,9 +1942,8 @@ book_of_changes = {'1': ["""
     This hexagram is the opposite of the preceding one. Heaven is above,
     drawing farther and farther away, while the earth below sinks farther into the
     depths. The creative powers are not in relation. It is a time of standstill and
-    decline. This hexagram is linked with the seventh month (August-
-    September), when the year has passed its zenith and autumnal decay is setting
-    in.
+    decline. This hexagram is linked with the seventh month (August- September),
+    when the year has passed its zenith and autumnal decay is setting in.
     
     
         THE JUDGMENT
@@ -2076,8 +2079,8 @@ book_of_changes = {'1': ["""
     The standstill does not last forever. However, it does not cease of its own
     accord; the right man is needed to end it. This is the difference between a
     state of peace and a state of stagnation. Continuous effort is necessary to
-    maintain peace: left to itself it would change into stagnation and
-    Inferior people who have risen to power illegitimately do not feel equal to the
+    maintain peace: left to itself it would change into stagnation and inferior
+    people who have risen to power illegitimately do not feel equal to the
     responsibility they have taken upon themselves. In their hearts they begin to
     disintegration. The time of disintegration, however, does not change back
     automatically to a condition of peace and prosperity; effort must be put forth
@@ -3270,13 +3273,13 @@ book_of_changes = {'1': ["""
     
     This is the place of transition. We no longer look outward to receive pictures
     that are more or less limited and confused, but direct out contemplation upon
-    ourselves in order to find a guideline for our decisions. This self -
-    contemplation means the overcoming of naive egotism in the person who
-    sees everything solely form his own standpoint. He begins to reflect and in
-    this way acquires objectivity. However, self-knowledge does not mean
-    preoccupation with one's own thoughts; rather, it means concern about the
-    effects one creates. It is only the effects our lives produce that give us the
-    right to judge whether what we have done means progress or regression.
+    ourselves in order to find a guideline for our decisions. This self-contemplation
+    means the overcoming of naive egotism in the person who sees everything solely
+    form his own standpoint. He begins to reflect and in this way acquires objectivity.
+    However, self-knowledge does not mean preoccupation with one's own thoughts;
+    rather, it means concern about the effects one creates. It is only the effects our
+    lives produce that give us the right to judge whether what we have done means
+    progress or regression.
     
     """,
                           """
@@ -3370,17 +3373,15 @@ book_of_changes = {'1': ["""
         Thus the kings of former times made firm the laws
         Through clearly defined penalties.
     
-    Penalties are the individual applications of the law. The laws
-    specify the penalties. Clarity prevails when mild and severe
-    penalties are differentiated, according to the nature of the crimes.
-    This is symbolized by the clarity of lighting. The law is strengthened
-    by a just application of penalties. This is symbolized by the terror
-    of thunder. This clarity and severity have the effect of instilling
-    respect; it is not that the penalties are ends in themselves.
-    The obstructions in the social life of man increase when there is a
-    lack of clarity in the penal codes and slackness in executing them.
-    The only to strengthen the law is to make it clear and make penalties
-    certain and swift.
+    Penalties are the individual applications of the law. The laws specify the
+    penalties. Clarity prevails when mild and severe penalties are differentiated,
+    according to the nature of the crimes. This is symbolized by the clarity of
+    lighting. The law is strengthened by a just application of penalties. This is
+    symbolized by the terror of thunder. This clarity and severity have the effect
+    of instilling respect; it is not that the penalties are ends in themselves.
+    The obstructions in the social life of man increase when there is a lack of
+    clarity in the penal codes and slackness in executing them. The only to
+    strengthen the law is to make it clear and make penalties certain and swift.
     
     """,
                           """
@@ -3405,13 +3406,11 @@ book_of_changes = {'1': ["""
         So that his nose disappears.
         No blame.
     
-    It is easy to discriminate between right and wrong in this case;
-    it is like biting through tender meat. But one encounters a
-    hardened sinner, and, aroused by anger, one goes a little too
-    far. The disappearance of the nose in the course of the bite
-    signifies that indignation blots out finer sensibility. However,
-    there is no great harm in this, because the penalty as such is
-    just.
+    It is easy to discriminate between right and wrong in this case; it is like
+    biting through tender meat. But one encounters a hardened sinner, and, aroused
+    by anger, one goes a little too far. The disappearance of the nose in the course
+    of the bite signifies that indignation blots out finer sensibility. However,
+    there is no great harm in this, because the penalty as such is just.
     
     """,
                           """
@@ -7434,9 +7433,8 @@ book_of_changes = {'1': ["""
     The wood represents not the buckets, which in ancient times were made of
     clay, but rather the wooden poles by which the water is hauled up from the
     well. The image also refers to the world of plants, which lift water out of the
-    earth by means of their fibers.
-    The well from which water is drawn conveys the further idea of an
-    inexhaustible dispensing of nourishment.
+    earth by means of their fibers. The well from which water is drawn conveys the
+    further idea of an inexhaustible dispensing of nourishment.
     
     
         THE JUDGMENT
@@ -10194,7 +10192,7 @@ book_of_changes = {'1': ["""
     17. Following\t\t\t\t\t--\t788778
     18. Work on what has been spoiled [Decay]\t\t\t\t\t--\t877887
     19. Approach\t\t\t\t\t--\t778888
-    20. Contemplation (View)\t\t\t\t\t--\t888877
+    20. Contemplation [View]\t\t\t\t\t--\t888877
     21. Biting Through\t\t\t\t\t--\t788787
     22. Grace\t\t\t\t\t--\t787887
     23. Splitting Apart\t\t\t\t\t--\t888887
@@ -10204,7 +10202,7 @@ book_of_changes = {'1': ["""
     27. Comers of the Mouth [Providing Nourishment]\t\t\t\t\t--\t788887
     28. Preponderance of the Great\t\t\t\t\t--\t877778
     29. The Abysmal\t\t\t\t\t--\t878878
-    30. The Clinging, Fire\t\t\t\t\t--\t787787
+    30. The Clinging\t\t\t\t\t--\t787787
     31. Influence [Wooing]\t\t\t\t\t--\t887778
     32. Duration\t\t\t\t\t--\t877788
     33. Retreat\t\t\t\t\t--\t887777
@@ -10804,6 +10802,10 @@ lets us know that line 3 is included in the answer. And lastly the '62' tells us
 hexagram it changes into - 62. Preponderance of the Small. The last numbers is the
 date and time, 3. september 2019 06:24."""]}
 
+
+# The binary codes of the hexagrams
+# The 1's represents the odd values of 7 and 9.
+# The 0's represents the even values of 6 and 8.
 hex_codes = [{'title': 'hexagrams'},
              {'1': '111111'},
              {'2': '000000'},
@@ -10872,7 +10874,27 @@ hex_codes = [{'title': 'hexagrams'},
 
 
 def general_info():
+    """
+    Initializes the 'About the Book' window
+    and display the 'Info' value.
+
+    Contains a for loop that concatenates the first 64
+    sections of the dictionary book_of_change into
+    a continuous string displayed in the function/window
+    the_book.
+    """
+    key = range(1, 65)
+    the_boc = ''
+    for i in key:
+        str_i = str(i)
+        for text in book_of_changes[str_i]:
+            the_boc += text
+
     def foreword():
+        """
+        Initializes the 'Foreword' window - a sub-window
+        and display the 'Foreword' value.
+        """
         foreword_window = tk.Tk()
         foreword_window.title('Foreword')
         foreword_window.geometry('800x600+550+200')
@@ -10890,14 +10912,11 @@ def general_info():
         tkinter.Button(foreword_frame, text='Close Window', font='Georgia 10',
                        command=foreword_window.destroy).place(relx=0.835, rely=0.9)
 
-    key = range(1, 65)
-    the_boc = ''
-    for i in key:
-        str_i = str(i)
-        for text in book_of_changes[str_i]:
-            the_boc += text
-
     def the_book():
+        """
+        Initializes the 'The Book I: The Text' window - a sub-window
+        and display the 'Index' value.
+        """
         the_book_window = tk.Tk()
         the_book_window.title('Book I: The Text')
         the_book_window.geometry('800x600+550+200')
@@ -10938,6 +10957,10 @@ def general_info():
 
 
 def question_help():
+    """
+    Initializes the 'Question Help Window'
+    and display the 'Question' value.
+    """
     question_help_window = tkinter.Tk()
     question_help_window.title('Question Help Window')
     question_help_window.geometry('650x400+625+300')
@@ -10957,6 +10980,10 @@ def question_help():
 
 
 def manuel_help():
+    """
+    Initializes the 'Coin Toss Help Window'
+    and display the 'Manuel' value.
+    """
     manuel_help_window = tkinter.Tk()
     manuel_help_window.title('Coin Toss Help Window')
     manuel_help_window.geometry('650x400+625+300')
@@ -10976,6 +11003,10 @@ def manuel_help():
 
 
 def search_help():
+    """
+    Initializes the 'Search Help Window'
+    and display the 'Search' value.
+    """
     search_help_window = tkinter.Tk()
     search_help_window.title('Search Help Window')
     search_help_window.geometry('650x400+625+300')
@@ -10995,6 +11026,10 @@ def search_help():
 
 
 def path_help():
+    """
+    Initializes the 'Active Path Help Window'
+    and display the 'Path' value
+    """
     path_help_window = tkinter.Tk()
     path_help_window.title('Active Path Help Window')
     path_help_window.geometry('650x400+625+300')
@@ -11015,9 +11050,9 @@ def path_help():
 
 def input_data():
     """
-    takes in the name entry, question entry and local date.
-    Puts the three items in to a string variable called data.
-    return: data (str)
+    Takes in the name entry, question entry and local date,
+    puts the three items into a string variable called data.
+    return: entry_data (str)
     """
     name = entry_name.get()
     question = question_entry.get(1.0, END)
@@ -11029,28 +11064,35 @@ def input_data():
 
 def input_path():
     """
-    takes in the path entry, and the path save button stores the
+    Takes in the path entry, and the path save button stores the
     path entry into a text file called Inventory.
     """
-    new_path = entry_path.get()
-    active_path = new_path
+    active_path = entry_path.get()
     with open('Inventory/active path.txt', 'w') as file5:
         file5.write(active_path)
 
+    # Active path frame is destroyed and rebuilt.
     active_path_frame.destroy()
     new_active_path_frame = tkinter.LabelFrame(master=window_frame, text='Active path', font='Georgia 8',
                                                bg=main_colour)
     new_active_path_frame.place(width=313, relx=0.1, rely=0.83)
 
-    if len(new_path) < 1:
+    # If the active path is shorter than 1 a warning text is displayed,
+    # else if not the active path is display.
+    if len(active_path) < 1:
         tkinter.Label(master=new_active_path_frame, text='         ---- Warning: No Active Path Found! ----',
                       fg=warning_text_colour, font='Georgia 10', bg=main_colour).grid(row=0, column=0)
     else:
-        tkinter.Label(master=new_active_path_frame, text=new_path, font='Georgia 10',
+        tkinter.Label(master=new_active_path_frame, text=active_path, font='Georgia 10',
                       bg=main_colour).grid(row=0, column=0)
 
 
 def manuel_update():
+    """
+    Gets the value from the six spinboxes, concatenates
+    the values into one string.
+    :return: coin (str)
+    """
     one = line_1.get()
     two = line_2.get()
     three = line_3.get()
@@ -11063,9 +11105,14 @@ def manuel_update():
 
 
 def search_update():
+    """
+    Gets the value from the combobox. The for loop
+    then looks for a numerical value(s) in the string
+    and join/add them into the search_key_x variable.
+    :return: search_key_x (str)
+    """
     hex_name = combo_hex.get()
     search_key_x = ''
-
     for char in hex_name:
         if char in '0123456789':
             search_key_x += ''.join(char)
@@ -11074,6 +11121,11 @@ def search_update():
 
 
 def auto_manuel_choice():
+    """
+    Destroys and rebuilds choose frame, radiobuttons and 'Ask' button
+    every time they are alternated between.
+    """
+    # If switched to auto - destroy current, rebuild new auto settings.
     if auto_manuel.get() is 1:
 
         choose_frame.destroy()
@@ -11098,6 +11150,7 @@ def auto_manuel_choice():
                                       command=ask_auto)
         execute_new1.place(relx=0.735, rely=0.79)
 
+    # If switched to manuel - destroy current, rebuild new manuel settings
     elif auto_manuel.get() is 2:
 
         choose_frame.destroy()
@@ -11124,6 +11177,9 @@ def auto_manuel_choice():
 
 
 def file_error():
+    """
+    Initializes Active Path Error Window.
+    """
     invalid_window = tkinter.Tk()
     invalid_window.title('Active Path Error!')
     invalid_window.geometry('450x300+725+350')
@@ -11143,6 +11199,11 @@ def file_error():
 
 
 def search():
+    """
+    Gets the search_key from search_update(), and puts the hexagram
+    + all 6 lines into a variable called search_text. If search_key
+    is 1 or 2 it also adds a 7th line into the variable.
+    """
     search_key = search_update()
 
     search_text = (book_of_changes[search_key][0] + ('=' * 60) +
@@ -11151,12 +11212,16 @@ def search():
                    book_of_changes[search_key][3] + ('=' * 60) +
                    book_of_changes[search_key][4] + ('=' * 60) +
                    book_of_changes[search_key][5] + ('=' * 60) +
-                   book_of_changes[search_key][6] + ('=' * 60))
+                   book_of_changes[search_key][6])
 
     if search_key is '1' or search_key is '2':
         search_text += book_of_changes[search_key][7]
 
     def search_answer_read():
+        """
+        Initializes The Search Answer Window
+        and display the search_text.
+        """
         search_window = tk.Tk()
         search_window.title('The Search Answer')
         search_window.geometry('800x600+550+200')
@@ -11178,6 +11243,7 @@ def search():
 
 
 def ask_auto():
+
     def coin_toss():
         """
         a random coin toss resulting in a 2 or a 3, done
@@ -11291,17 +11357,20 @@ def ask_auto():
 
         return x_line
 
+    # Makes three variables containing the keys to the first and
+    # second hexagram + a list containing the line values.
     first_hex_key = hex_finder(first_hex)
     second_hex_key = hex_finder(second_hex)
     changing_lines = hex_lines()
 
+    # Code that sorts out which parts of the book_of_changes will be
+    # displayed in the answer based on the three variables above.
     lines = ''
     extra = ''
     second = ''
 
     if len(changing_lines) > 0:
         first = book_of_changes[first_hex_key][0] + ('=' * 60)
-
         if 1 in changing_lines:
             lines += book_of_changes[first_hex_key][1] + ('=' * 60)
         if 2 in changing_lines:
@@ -11318,22 +11387,20 @@ def ask_auto():
             extra = book_of_changes[first_hex_key][7] + ('=' * 60)
         if coin_str_auto == '666666':
             extra = book_of_changes[first_hex_key][7] + ('=' * 60)
-
-        second = book_of_changes[second_hex_key][0] + ('=' * 60)
-
+        second = book_of_changes[second_hex_key][0]
     else:
-        first = book_of_changes[first_hex_key][0] + ('=' * 60)
+        first = book_of_changes[first_hex_key][0]
 
+    # Different variables is created.
     display = input_data()
     local_time = time.strftime('%d-%m-%y %H%M', time.localtime())
     extension = 'txt'
     answer = display + first + lines + extra + second
-
     with open('Inventory/active path.txt', 'r') as file3:
         active_path = file3.readline()
-
     error_status = False
 
+    # The answer text file is created and tried open.
     try:
         with open(f'{active_path}\\({first_hex_key}-{changing_lines}-{second_hex_key})'
                   f'--{local_time}.{extension}', 'w') as file4:
@@ -11343,10 +11410,19 @@ def ask_auto():
             error_status = True
             file_error()
 
+    # If no error in active path -> answer_read()
     if error_status is False:
-        def answer_read():
 
+        def answer_read():
+            """
+             Initializes 'The Answer' window
+             and displays the 'answer' variable.
+            """
             def restart_quit():
+                """
+                Initializes the 'Next Question or Quit' window
+                and destroys 'The Answer' window.
+                """
                 restart_quit_window = tkinter.Tk()
                 restart_quit_window.title('Next Question or Quit?')
                 restart_quit_window.geometry('450x300+725+350')
@@ -11383,6 +11459,8 @@ def ask_auto():
             text_1.insert(tk.END, answer)
             tkinter.Button(answer_frame, text='Close Window', font='Georgia 10',
                            command=restart_quit).place(relx=0.05, rely=0.9)
+            # If active path is empty -> file_error() and answer window destroy,
+            # else reset question entry.
             if len(active_path) < 1:
                 file_error()
                 answer_window.destroy()
@@ -11393,6 +11471,7 @@ def ask_auto():
 
 
 def ask_manuel():
+
     coin_str_manuel = manuel_update()
 
     def coin_int():
@@ -11480,17 +11559,20 @@ def ask_manuel():
 
         return x_line
 
+    # Makes three variables containing the keys to the first and
+    # second hexagram + a list containing the line values.
     first_hex_key = hex_finder(first_hex)
     second_hex_key = hex_finder(second_hex)
     changing_lines = hex_lines()
 
+    # Code that sorts out which parts of the book_of_changes will be
+    # displayed in the answer based on the three variables above.
     lines = ''
     extra = ''
     second = ''
 
     if len(changing_lines) > 0:
         first = book_of_changes[first_hex_key][0] + ('=' * 60)
-
         if 1 in changing_lines:
             lines += book_of_changes[first_hex_key][1] + ('=' * 60)
         if 2 in changing_lines:
@@ -11507,22 +11589,20 @@ def ask_manuel():
             extra = book_of_changes[first_hex_key][7] + ('=' * 60)
         if coin_str_manuel == '666666':
             extra = book_of_changes[first_hex_key][7] + ('=' * 60)
-
-        second = book_of_changes[second_hex_key][0] + ('=' * 60)
-
+        second = book_of_changes[second_hex_key][0]
     else:
-        first = book_of_changes[first_hex_key][0] + ('=' * 60)
+        first = book_of_changes[first_hex_key][0]
 
+    # Different variables is created.
     display = input_data()
     local_time = time.strftime('%d-%m-%y %H%M', time.localtime())
     extension = 'txt'
     answer = display + first + lines + extra + second
-
     with open('Inventory/active path.txt', 'r') as file3:
         active_path = file3.readline()
-
     error_status = False
 
+    # The answer text file is created and tried open.
     try:
         with open(f'{active_path}\\({first_hex_key}-{changing_lines}-{second_hex_key})'
                   f'--{local_time}.{extension}', 'w') as file4:
@@ -11532,13 +11612,22 @@ def ask_manuel():
             error_status = True
             file_error()
 
+    # If no error in active path -> answer_read()
     if error_status is False:
-        def answer_read():
 
+        def answer_read():
+            """
+             Initializes 'The Answer' window
+             and displays the 'answer' variable.
+            """
             def restart_quit():
+                """
+                Initializes the 'Next Question or Quit' window
+                and destroys 'The Answer' window.
+                """
                 restart_quit_window = tkinter.Tk()
                 restart_quit_window.title('Next Question or Quit?')
-                restart_quit_window.geometry('450x300+735+350')
+                restart_quit_window.geometry('450x300+725+350')
                 restart_quit_window.place_slaves()
                 restart_quit_window.resizable(width=False, height=False)
                 restart_quit_frame = tk.Frame(master=restart_quit_window, width=450, height=300,
@@ -11552,7 +11641,7 @@ def ask_manuel():
                               bg=restart_quit_colour, font='Georgia 12', justify=LEFT).place(relx=0.2, rely=0.225)
                 tkinter.Button(restart_quit_frame, text='Quit', font='Georgia 10',
                                command=window.quit).place(relx=0.8, rely=0.8)
-                tkinter.Button(restart_quit_frame, text='New Question', font='Georgia 10',
+                tkinter.Button(restart_quit_frame, text='Next Question', font='Georgia 10',
                                command=restart_quit_window.destroy).place(relx=0.1, rely=0.8)
                 answer_window.destroy()
 
@@ -11572,6 +11661,8 @@ def ask_manuel():
             text_1.insert(tk.END, answer)
             tkinter.Button(answer_frame, text='Close Window', font='Georgia 10',
                            command=restart_quit).place(relx=0.05, rely=0.9)
+            # If active path is empty -> file_error() and answer window destroy,
+            # else reset question entry.
             if len(active_path) < 1:
                 file_error()
                 answer_window.destroy()
@@ -11596,6 +11687,7 @@ answer_colour = '#9e96eb'
 restart_quit_colour = '#dddddd'
 intro_colour = '#787878'
 
+# Opens the active path text document and puts the content into a variable called path.
 try:
     with open('Inventory/active path.txt', 'r') as file:
         path = file.readline()
@@ -11733,7 +11825,7 @@ hex_combo['values'] = ('1. The Creative', '2. The Receptive', '3. Difficulty at 
                        '22. Grace', '23. Splitting Apart', '24. Return [The Turning Point]',
                        '25. Innocence [The Unexpected]', '26. The Taming Power of the Great',
                        '27. Comers of the Mouth [Providing Nourishment]', '28. Preponderance of the Great',
-                       '29. The Abysmal', '30. The Clinging, Fire', '31. Influence [Wooing]', '32. Duration',
+                       '29. The Abysmal', '30. The Clinging', '31. Influence [Wooing]', '32. Duration',
                        '33. Retreat', '34. The Power of the Great', '35. Progress',
                        '36. Darkening of the light', '37. The Family [The Clan]', '38. Opposition',
                        '39. Obstruction', '40. Deliverance', '41. Decrease', '42. Increase',
@@ -11777,7 +11869,7 @@ tkinter.Button(master=window_frame, image=question_logo_4, border=3, cursor='han
 
 # Logo
 logo = PhotoImage(file='Inventory\ouroboros 200.png')
-tkinter.Label(master=window_frame, image=logo, bg=main_colour).place(relx=0.82, rely=0.77)
+tkinter.Label(master=window_frame, image=logo, bg=main_colour).place(relx=0.8, rely=0.75)
 
 # Ask Question Button
 execute = tkinter.Button(master=window_frame, text='  Ask  ', height=2, border=3, bg=auto_colour,
@@ -11786,10 +11878,10 @@ execute = tkinter.Button(master=window_frame, text='  Ask  ', height=2, border=3
 execute.place(relx=0.735, rely=0.79)
 
 # Current Version Label
-tkinter.Label(master=window_frame, text='Version: 1.3', font='Georgia 7',
+tkinter.Label(master=window_frame, text='Version: 1.4', font='Georgia 7',
               bg=main_colour).place(relx=0.02, rely=0.95)
 
-# Intro Page
+# Intro Page (Only displayed if no active path exist)
 if len(path) < 1:
     intro_window = tkinter.Tk()
     intro_window.title('Introduction Page')
