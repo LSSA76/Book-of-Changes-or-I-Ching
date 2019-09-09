@@ -10376,8 +10376,8 @@ index you will find the actual book from beginning to end. If you want to read o
 specific hexagram you can either scroll down to find it or use the search function
 on the main window.
 
-Suppose you wish to look at 3. Difficulty at the Beginning, but are only interested
-in line 3 and 5, and the hexagram it changes into, then you can use the manuel method
+Suppose you wish to look at 3. Difficulty at the Beginning, but are only interested in
+line 3 and 5, and the hexagram it changes into, then you can use the manuel method
 to modify the code from 788878 to 786898. In other word change the 7's and 8's to 9's
 and 6's in the positions of the line or lines you wish to view."""],
                    'Foreword': ["""Foreword:
