@@ -21,4 +21,4 @@ To download the program you need only download the executable install file (Book
 The Book_of_Changes.py file (Python 3) is the source code.
 And the Inventory is additional material to run the source code.
 
-Current version 1.3
+Current version 1.4
