@@ -1,4 +1,4 @@
-# Book of Changes version 1.4
+# Book of Changes version 1.5
 
 import time
 from random import randint
@@ -498,7 +498,7 @@ book_of_changes = {'1': ["""
     
     Times of growth are beset with difficulties. They resemble a first birth. But
     these difficulties arise from the very profusion of all that is struggling to
-    attain form . Everything is in motion: therefore if one perseveres there is a
+    attain form. Everything is in motion: therefore if one perseveres there is a
     prospect of great success, in spite of the existing danger. When it is a man's
     fate to undertake such new beginnings, everything is still unformed, dark.
     Hence he must hold back, because any premature move might bring disaster.
@@ -9862,7 +9862,7 @@ book_of_changes = {'1': ["""
         At the end disorder.
     
     The transition from the old to the new time is already accomplished. In
-    principle, everything stands systematized, and it si only in regard to details
+    principle, everything stands systematized, and it is only in regard to details
     that success is still to be achieved. In respect to this, however, we must be
     careful to maintain the right attitude. Everything proceeds as if of its own
     accord, and this can all too easily tempt us to relax and let thing take their
@@ -11215,7 +11215,7 @@ def search():
                    book_of_changes[search_key][6])
 
     if search_key is '1' or search_key is '2':
-        search_text += book_of_changes[search_key][7]
+        search_text += ('=' * 60) + book_of_changes[search_key][7]
 
     def search_answer_read():
         """
@@ -11312,7 +11312,7 @@ def ask_auto():
             if i == 9:
                 second_hex_temp.append(0)
 
-        return (''.join(str(bit) for bit in first_hex_temp)), \
+        return (''.join(str(bit) for bit in first_hex_temp)),\
                (''.join(str(bit) for bit in second_hex_temp))
 
     first_hex, second_hex = hex_converter()
@@ -11878,7 +11878,7 @@ execute = tkinter.Button(master=window_frame, text='  Ask  ', height=2, border=3
 execute.place(relx=0.735, rely=0.79)
 
 # Current Version Label
-tkinter.Label(master=window_frame, text='Version: 1.4', font='Georgia 7',
+tkinter.Label(master=window_frame, text='Version: 1.5', font='Georgia 7',
               bg=main_colour).place(relx=0.02, rely=0.95)
 
 # Intro Page (Only displayed if no active path exist)
